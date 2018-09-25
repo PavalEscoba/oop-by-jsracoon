@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Validator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="container-fluid main-header">
+    <div class="row">
+      <h1>Валидация данных</h1>
+    </div>
+  </header>
+
+  <!-- Классы в Bootsrap 3 - http://getbootstrap.com/css/#forms-control-validation -->
+  <main class="container validator-container">
+    <div class="row">
+
+      <!-- Контейнер для email адреса -->
+      <div class="col-sm-6">
+        <div class="input-group center-block">
+          <label for="email">Ваш адрес электронной почты</label>
+          <input type="text" class="form-control" id="email" placeholder="example@email.com">
+          <span id="email-error-container" class="help-block">Введите адресс вашей электронной почты</span>
+        </div>
+      </div>
+
+      <!-- Контейнер для пароля -->
+      <div class="col-sm-6">
+        <div class="input-group center-block">
+          <label for="password">Ваш пароль</label>
+          <input type="password" class="form-control" id="password" placeholder="******">
+          <span id="password-error-container" class="help-block">Введите ваш пароль</span>
+        </div>
+      </div>
+
+      <!-- Контейнер для кнопки, при нажатие на которую будет происходить валидация -->
+      <div class="col-sm-12">
+        <button class="btn btn-default" id="validate" type="button">Провести валидацию</button>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="js/validate.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
