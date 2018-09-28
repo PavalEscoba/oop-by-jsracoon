@@ -4,7 +4,23 @@
   text-align: center;
   padding-bottom: 1.5rem; 
 }
-
+body{
+  background-color: green;
+}
 .validator-container {
   margin-top: 2rem;
+}
+table{
+  width: 500px;
+  background-color: rgb(256, 256, 256); 
+}
+td{
+  border: 2px solid;
+  hsla(0, 0%, 100%, 1)
+}
+div[class=float]{
+  float:left;
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
